@@ -26,4 +26,18 @@ async function remplir_accessoires(){
       }
 }
 
-bb
+async function chargerTemperature(ville){
+  try {
+    //const apiKey = "";
+    console.log(apiKey);
+    const apiUrl = https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=${apiKey}&units=metric;
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    const temp = data.main.temp;
+
+    return temp;
+  } 
+  catch (error) {
+    console.error("Erreur", error);
+  }
+}

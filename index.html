@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>site</title>
+    <script src="script.js"></script>
+    <a href="images/favicon.png"></a>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Insérer votre code HTML *en-dessous* de cette ligne -->
+    <header>
+        <img src="images/logo.svg" alt="">
+        <nav class="navbar">
+            <ul>
+                <li><a href=""></a>Model 3</li>
+                <li><a href=""></a>Model S</li>
+                <li><a href=""></a>Powerwall</li>
+                <li><a href=""></a>Accessoires</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page" id="model3">
+        <h1>Model 3</h1>
+        <a href="https://www.tesla.com" id="reserver">Réservez un essai sans contact</a>
+   
+        <div class="bas-section">
+            <a href="https://www.tesla.com/fr_fr/model3/design"" class="btn-config">
+                Configuration personalisée
+            </a>
+            <a href="https://www.tesla.com/fr_fr/inventory/new/m3" class="btn-vehicules">
+                Véhicules disponibles
+            </a>
+            <p>
+                A reçu la note maximale de 5 étoiles par Euro NCAP
+            </p>
+            <img src="images/fleche.gif" id="model3-img">
+        </div>
+    </section>
+
+    <section class="page" id="modelS">
+        <h1>Model S</h1>
+
+        <div class="bas-section">
+            <a href="https://www.tesla.com/fr_fr/models/design" class="btn-config">
+                Configuration personalisée
+            </a>
+            <a href="https://www.tesla.com/fr_fr/inventory/new/m3" class="btn-vehicules">
+                Véhicules disponibles
+            </a>
+        </div>
+    </section>
+
+    <section class="page" id="powerwall">
+        <h1>Systèmes d'énergie solaire et Powerwalls</h1>
+        <h2>De l’énergie pour tous vos besoins</h2>
+
+        <div class="bas-section">
+            <a href="https://www.tesla.com/fr_fr/powerwall" class="btn-config">En savoir plus</a>
+        </div>
+    </section>
+
+    <section class="page" id="accessoires">
+        <h1>Accessoires</h1>
+
+        <div id="grid-container">
+            
+        </div>
+        <footer id="footer-tesla">
+            <ul>
+                <li>
+                    <a href="https://www.tesla.com/fr_fr/about">Tesla © 2021</a>
+                </li>
+                <li>
+                    <a href="https://www.tesla.com/fr_fr/about/legal">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="https://www.tesla.com/fr_fr/contact">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.tesla.com/fr_fr/careers">Carrières</a>
+                </li>
+                <li>
+                    <a href="https://www.tesla.com/fr_fr/updates">Newsletter</a>
+                </li>
+                <li>
+                    <a href="https://www.tesla.com/fr_fr/blog">Actualités</a>
+                </li>
+                <li>
+                    <a href="https://www.tesla.com/fr_fr/findus/list">Localisations</a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+    <!-- Insérer votre code HTML *au-dessus* de cette ligne -->
+
+    <template id="template_accessoires">
+        <div class="grid-item">
+            <img src="images/{{accessoires-image}}.jpg">
+            <div class="inner">
+                <h2>{{accessoires-titre}}</h2>
+                <p>
+                    {{accessoires-texte}}
+                </p>
+            </div>
+            <a href="www.tesla.com/fr_fr">En savoir plus</a>
+        </div>
+    </template>
+
+</body>
+
+</html>
