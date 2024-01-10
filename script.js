@@ -25,3 +25,5 @@ async function remplir_accessoires(){
         console.error("erreur",error);
       }
 }
+
+bb
